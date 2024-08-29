@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: gray;
+    height: 100vh;
+}
+.box{
+    background-color: white;
+    border: 2px solid;
+    height: auto;
+    width: 50%; /* could be auto, set %, or set #px*/
+    padding: 25px;
+    float: left;
+    text-align: center;
+
+    max-width: none;
+    min-width: none;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: fixed; 
+    /* position could be relative, fixed, absolute, sticky, static
+    top: 100px; pushes down
+    left: -100px; pushes left
+    right: 0px;
+    bottom: 0px;
+    */
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+/*body{
+    background-image: url(images/citybg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+#container1{
+    border: 2px solid;
+
+}
+#container1 > p{ /* change > to +, ~, |, to change combinators */
+    background-color: yellow;
+}
+a:link{
+    color: hsl(214, 72%, 46%);
+}
+a:hover{
+    color: hsl(214, 45%, 69%);
+    font-size: 1.1em;
+}
+a:active{
+    font-size: 1.1em;
+    color:blue;
+}
+a:visited{
+    color: grey;
+}
+li:hover{
+    background-color:yellow;
+}
+li:not(:hover){
+    background-color:gray;
+}
+li:nth-child(1){ /*can write odd or even or #n + #(does every 3rd element)*/
+    background-color:hsl(60, 96%, 72%);
+}
+#greeting p{
+    background-color:blue;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color:yellow;
+}
+p::selection{
+    color: rgb(9, 255, 0);
+    background-color: rgb(90, 85, 85);
+}
+#fruit li::before{
+    content:"✅";
+}
+#apple::after{
+    content:"🍎";
+}
+#orange::after{
+    content:"🟠";
+}
+#banana::after{
+    content:"🍌";
+}
+#fruit li::marker{
+    content:"👉";
+    color: hsl(234, 70%, 56%);
+    font-size: 1.2em;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 75%);
+    color:aqua;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 75%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 63%);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 75%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.dropdown{
+    display:inline-block;
+}
+.gallery{
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 53%);
+    margin: 5px;
+    width:200px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 2px solid hsl(0, 0%, 22%);
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration:none;
+    margin-right: 10px;
+}
+.fa-sharp-duotone.fa-solid.fa-house{
+    color:hsl(0, 0%, 50%);
+}
+.fa-sharp-duotone.fa-solid.fa-house:hover{
+    color:hsl(0, 0%, 70%);
+}
+.fa-brands.fa-twitter.fa-4x{
+    color:hsl(195, 80%, 57%);
+}
+.fa-brands.fa-twitter.fa-4x:hover{
+    color:hsl(195, 80%, 77%);
+}
+.fa-brands.fa-youtube.fa-4x{
+    color:hsl(0, 100%, 50%)
+}
+.fa-brands.fa-youtube.fa-4x:hover{
+    color:hsl(0, 100%, 70%)
+}
+.fa-brands.fa-reddit.fa-4x{
+    color: hsl(16, 100%, 50%);
+}
+.fa-brands.fa-reddit.fa-4x:hover{
+    color: hsl(16, 100%, 70%);
+}

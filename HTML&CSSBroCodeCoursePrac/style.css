@@ -1,0 +1,103 @@
+@font-face{
+    src:url(fonts/PoetsenOne-Regular.ttf);
+    font-family: PoetsenOne-Regular;
+}
+
+#div2{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#span1{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    display: block; /*types of display: block, inline, inline-block*/
+    /*visibility: hidden;*/
+}
+#div1{
+    border: 2px solid;
+    height: 75px;
+    overflow: visible; /*types of overflow: visible, hidden, clip, scroll, auto (scroll when needed)*/
+    /*overflow-clip-margin: 13px;*/
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+body{
+    background-color: white;
+    margin: 0px;
+    border: 3px solid;
+    display: flow-root; /*keeps imgs in border*/
+}
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+h1{
+    color:white;
+    font-family: PoetsenOne-Regular, verdana, arial;
+    font-size: 16px;
+    font-weight: normal;
+    
+    /*borders*/
+    border: 3px solid black;
+    border-style: inset; /*inset, outset, solid or none*/
+    border-width: 4px;
+    border-color: black;
+    border-radius: 15px;
+
+    text-shadow: 10px 25px 2px hsl(28, 93%, 59%), -10px 25px 2px hsl(216, 93%, 59%);
+
+}
+#box1{
+    background-color: yellow;
+    box-shadow: 3px 3px 5px;
+    margin: 50px;
+
+    /* 
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    could use auto instead of ##px to make box move to farthest of one direction
+    */
+}
+#box2{
+    background-color: blue;
+    box-shadow: 3px 3px 5px;
+}
+#p1{
+    color:red;
+    font-family: "poetsen one", "lucida console", "courier new";
+    font-size: 1em;
+    font-style: italic; 
+
+    /*more border shenanigans*/
+    border-bottom: 3px solid red;
+    border-top: 3px solid skyblue;
+    border-right: 3px #59ff5f;
+    border-left: 3px dotted yellow;
+}
+#p2{
+    color: rgb(102, 222, 255);
+}
+#p3{
+    color: #59ff5f sf;
+}
+#p4{
+    color: hsl(0, 0%, 33%);
+}
+.odd{
+    background-color:lime;
+}
+.even{
+    color:blue;
+}
